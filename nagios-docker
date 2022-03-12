@@ -1,0 +1,7 @@
+docker run --name nagios4  \
+  -v /home/mikestrommgmail/nagios/etc:/opt/nagios/etc/ \
+  -v /home/mikestrommgmail/nagios/var:/opt/nagios/var/ \
+  -v /home/mikestrommgmail/nagios/plugins:/opt/Custom-Nagios-Plugins \
+  -v /home/mikestrommgmail/nagios/nagiosgraph-var:/opt/nagiosgraph/var \
+  -v /home/mikestrommgmail/nagios/nagiosgraph-etc:/opt/nagiosgraph/etc \
+  -p 0.0.0.0:8080:80 jasonrivers/nagios:latest
